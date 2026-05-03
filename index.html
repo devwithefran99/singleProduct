@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer | BanglaBazar</title>
+    <!-- link starts here -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="./assets/style.css">
+    <!-- link ends here -->
+</head>
+<body>
+    <!-- header part starts -->
+    <header>
+        <!-- nav starts -->
+        <!-- ===== ANNOUNCEMENT ===== -->
+        <div class="announcement-bar">
+            🔥 Limited Time Offer! Order Today &nbsp;|&nbsp; Free Home Delivery Nationwide &nbsp;🚀
+        </div>
+ 
+        <nav class="site-nav">
+            <div class="container d-flex align-items-center justify-content-between">
+                <img src="./assets/images/logo.png" alt="logo">
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                    <span id="theme-label">Dark</span>
+                </button>
+            </div>
+        </nav>
+        <!-- nav ends -->
+    </header>
+    <!-- header ends -->
+ 
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Image -->
+                <div class="col-lg-6 order-lg-2">
+                    <div class="product-image-wrap fade-up">
+                        <span class="image-badge">🔥Best Sales</span>
+                        <img src="./assets/images/sukti.jpg" alt="sutki" id="hero-img"/>
+                    </div>
+                </div>
+                <!-- Info -->
+                <div class="col-lg-6 order-lg-1">
+                    <div class="fade-up">
+                        <span class="badge-offer">Best Offer for Today</span>
+                        <h1 class="product-title">প্রিমিয়াম ফ্রেশ <br/> লইট্ট্যা শুটকি</h1>
+                        <p class="product-tagline">
+                            সম্পূর্ণ হালাল প্রসেস এ শুকানো,পরিষ্কার ও পোকামুক্ত লইট্ট্যা শুটকি এখন আপনার হাতের নাগালেই!
+                        </p>
+                        <div class="price-row">
+                            <span class="price-current">৳ 999</span>
+                            <span class="price-old">৳ 1,699</span>
+                            <span class="discount-tag">59% Discount</span>
+                        </div>
+                        <a href="#order" class="btn-cta mb-3">
+                            <i class="fas fa-shopping-cart"></i>
+                            Order Now
+                        </a>
+                        <div class="trust-row">
+                            <div class="trust-item"><i class="fas fa-shield-alt"></i> 100% Organic</div>
+                            <div class="trust-item"><i class="fas fa-undo"></i> 7 Day Return Policy</div>
+                            <div class="trust-item"><i class="fas fa-truck"></i> Fast Delivery</div>
+                            <div class="trust-item"><i class="fas fa-lock"></i> Secure Payment</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- STATS -->
+    <section>
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat-item">
+                    <div class="stat-num">7K+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">4.4★</div>
+                    <div class="stat-label">Average Rating</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">92%</div>
+                    <div class="stat-label">Positive Reviews</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">24/7</div>
+                    <div class="stat-label">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- ===== DESCRIPTION ===== -->
+   <section class="desc-section">
+        <div class="container">
+            <div class="row g-5 align-items-start">
+                <div class="col-lg-6 fade-up">
+                    <div class="section-label">প্রোডাক্টের বিবরণ</div>
+                    <h2 class="section-title">কেন <span>বাংলাবাজারের</span> শুটকি মাছ আপনার জন্য উপযোক্ত ?</h2>
+                    <div class="divider"></div>
+                    <p class="desc-text">
+                        <span>বাংলাবাজারের</span> প্রিমিয়াম শুটকি মাছ তৈরি করা হয়েছে সেরা মানের তাজা মাছ দিয়ে, ঐতিহ্যবাহী পদ্ধতিতে রোদে শুকিয়ে। এটি দীর্ঘদিন সংরক্ষণযোগ্য, সুস্বাদু এবং পুষ্টিগুণে ভরপুর। প্রতিদিনের খাবারে সুস্বাদ যোগ করতে এর চেয়ে ভালো কিছু হয় না।
+                    </p>
+                    <ul class="benefit-list">
+                        <li><i class="fas fa-check-circle"></i> উন্নত মানের তাজা মাছ দিয়ে তৈরি, দীর্ঘদিন টিকে থাকে</li>
+                        <li><i class="fas fa-check-circle"></i> খুব সহজে রান্না করা যায় — কোনো বিশেষ দক্ষতার প্রয়োজন নেই</li>
+                        <li><i class="fas fa-check-circle"></i> প্রাকৃতিক ও ঐতিহ্যবাহী স্বাদ, যেকোনো পরিবেশে মানানসই</li>
+                        <li><i class="fas fa-check-circle"></i> উচ্চ প্রোটিন সমৃদ্ধ এবং পুষ্টিকর</li>
+                        <li><i class="fas fa-check-circle"></i> এক বছরের ওয়ারেন্টি ও পরবর্তী সেবা সহ</li>
+                        <li><i class="fas fa-check-circle"></i> সারা দেশে দ্রুত ডেলিভারি সুবিধা</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 fade-up">
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fa-solid fa-mortar-pestle"></i></div>
+                                <h5>দ্রুত রান্না</h5>
+                                <p>অল্প সময়েই অসাধারণ স্বাদ পাবেন।</p>
+                            </div>
+                        </div>
+                        <div class="col-6 fade-up">
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+                                <h5>পুরোপুরি নিরাপদ</h5>
+                                <p>স্বাস্থ্যকর ও পরিষ্কার পরিবেশে তৈরি।</p>
+                            </div>
+                        </div>
+                        <div class="col-6 fade-up">
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                                <h5>প্রাকৃতিক</h5>
+                                <p>কোনো কেমিক্যাল বা প্রিজারভেটিভ ছাড়াই তৈরি।</p>
+                            </div>
+                        </div>
+                        <div class="col-6 fade-up">
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                                <h5>২৪/৭ সাপোর্ট</h5>
+                                <p>যেকোনো সমস্যা বা প্রশ্নে আমরা সবসময় আপনার পাশে।</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- ===== VIDEO SECTION ===== -->
+    <section class="video-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+ 
+                <!-- LEFT: Content -->
+                <div class="col-lg-5 fade-up">
+                    <div class="video-content-panel">
+                        <div class="section-label">📺 আমাদের ইউটিউব চ্যানেল</div>
+                        <h2 class="section-title">আমাদের শুটকি মাছের ভিডিও ইউটিউবে দেখুন সরাসরি </h2>
+                        <div class="divider"></div>
+                        <p class="video-desc">
+                            আমাদের ইউটিউব চ্যানেলে দেখুন বিস্তারিত প্রোডাক্ট রিভিউ, রান্নার গাইডলাইন এবং আসল কাস্টমারদের অভিজ্ঞতা। কেনার আগে নিজেই যাচাই করে নিন!
+                        </p>
+                        <ul class="video-points">
+                            <li><i class="fas fa-play-circle"></i> শুটকি মাছের আনবক্সিং ও বিস্তারিত রিভিউ দেখুন</li>
+                            <li><i class="fas fa-star"></i> আসল কাস্টমারদের রিভিউ ও মতামত শুনুন</li>
+                            <li><i class="fas fa-tools"></i> সঠিকভাবে রান্না করার টিপস ও পদ্ধতি শিখুন</li>
+                            <li><i class="fas fa-bell"></i> সাবস্ক্রাইব করুন যাতে নতুন অফার মিস না হয়</li>
+                        </ul>
+                        <div class="d-flex align-items-center gap-3 flex-wrap">
+                            <a href="https://www.youtube.com/@YourChannel" target="_blank" class="yt-subscribe-btn">
+                                <i class="fab fa-youtube fa-lg"></i>
+                                চ্যানেলটি সাবস্ক্রাইব করুন
+                            </a>
+                            <span style="color:var(--text-muted);font-size:0.8rem">
+                                <i class="fas fa-users" style="color:var(--primary)"></i>
+                                ১০K+ সাবস্ক্রাইবার
+                            </span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <!-- RIGHT: Video Player -->
+                <div class="col-lg-7 fade-up">
+                    <div class="video-outer">
+                        <!-- Video Meta Bar -->
+                        <div class="video-meta">
+                            <div class="yt-avatar"><i class="fab fa-youtube"></i></div>
+                            <div class="video-meta-info">
+                                <div class="video-meta-title">প্রিমিয়াম শুটকি মাছ — ফুল রিভিউ &amp; আনবক্সিং 🔥</div>
+                                <div class="video-meta-channel">
+                                    <i class="fab fa-youtube"></i>
+                                    BrandShop Official &nbsp;•&nbsp; ৫৪K ভিউজ
+                                </div>
+                            </div>
+                        </div>
+ 
+                        <!-- Thumbnail click-to-play -->
+                        <!-- Replace dQw4w9WgXcQ with your actual YouTube Video ID -->
+                        <div class="yt-thumb-wrap" id="ytThumb" onclick="loadYT(this)" data-videoid="dQw4w9WgXcQ">
+                            <img
+                                src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+                                alt="শুটকি মাছ রিভিউ ভিডিও"
+                                onerror="this.src='https://placehold.co/800x450/1a1a2e/e63946?text=Video+Preview'"
+                            />
+                            <div class="play-btn-overlay">
+                                <div class="play-circle">
+                                    <i class="fab fa-youtube" style="margin-left:2px"></i>
+                                </div>
+                            </div>
+                        </div>
+ 
+                        <!-- Quick switch buttons -->
+                        <div class="d-flex gap-2 flex-wrap mt-3 px-1 pb-1">
+                            <button class="vid-tab active-tab" onclick="switchVideo('dQw4w9WgXcQ','প্রিমিয়াম শুটকি মাছ রিভিউ &amp; আনবক্সিং 🔥', this)">
+                                <i class="fas fa-play"></i> রিভিউ ভিডিও
+                            </button>
+                            <button class="vid-tab" onclick="switchVideo('SECOND_VIDEO_ID','কীভাবে রান্না করবেন? টিউটোরিয়াল', this)">
+                                <i class="fas fa-play"></i> রান্নার টিউটোরিয়াল
+                            </button>
+                            <button class="vid-tab" onclick="switchVideo('THIRD_VIDEO_ID','কাস্টমার অভিজ্ঞতা', this)">
+                                <i class="fas fa-play"></i> কাস্টমার রিভিউ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
+    </section>
+ 
+    <!-- ===== REVIEWS ===== -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <div class="section-label">Customer Reviews</div>
+                <h2 class="section-title">What Our Customers Are Saying</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+            <div class="row g-4">
+                <!-- Review 1 -->
+                <div class="col-md-6 col-lg-4 fade-up">
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">
+                            "Amazing product! I was a bit skeptical at first but I'm truly impressed after receiving it. The quality is excellent and the price is very reasonable."
+                        </p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar" style="background: linear-gradient(135deg,#e63946,#f4a261)">RB</div>
+                            <div>
+                                <div class="reviewer-name">Rahela Begum</div>
+                                <div class="reviewer-location">Dhaka, Bangladesh</div>
+                                <div class="verified-badge mt-1"><i class="fas fa-circle-check"></i> Verified Purchase</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="col-md-6 col-lg-4 fade-up">
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">
+                            "Excellent! Got fast delivery and the packaging was very neat. Nothing more to say about the product quality — 100% satisfied."
+                        </p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar" style="background: linear-gradient(135deg,#3d5a80,#0077b6)">KH</div>
+                            <div>
+                                <div class="reviewer-name">Kamrul Hasan</div>
+                                <div class="reviewer-location">Chittagong, Bangladesh</div>
+                                <div class="verified-badge mt-1"><i class="fas fa-circle-check"></i> Verified Purchase</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="col-md-6 col-lg-4 fade-up">
+                    <div class="review-card">
+                        <div class="review-stars">★★★★☆</div>
+                        <p class="review-text">
+                            "Ordered on a friend's recommendation and I'm not disappointed at all! The kids love it too. The whole family is happy. Will definitely order again."
+                        </p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar" style="background: linear-gradient(135deg,#2d6a4f,#52b788)">NA</div>
+                            <div>
+                                <div class="reviewer-name">Najma Akter</div>
+                                <div class="reviewer-location">Sylhet, Bangladesh</div>
+                                <div class="verified-badge mt-1"><i class="fas fa-circle-check"></i> Verified Purchase</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 4 -->
+                <div class="col-md-6 col-lg-4 fade-up">
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">
+                            "I'm always a bit nervous about online shopping, but buying from this store was a great experience. The support team was incredibly helpful."
+                        </p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar" style="background: linear-gradient(135deg,#7b2d8b,#c77dff)">TA</div>
+                            <div>
+                                <div class="reviewer-name">Tanvir Ahmed</div>
+                                <div class="reviewer-location">Rajshahi, Bangladesh</div>
+                                <div class="verified-badge mt-1"><i class="fas fa-circle-check"></i> Verified Purchase</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 5 -->
+                <div class="col-md-6 col-lg-4 fade-up">
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">
+                            "Ordered after seeing it on Facebook and received far better than expected. Very reasonable price. Already suggested it to my friends!"
+                        </p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar" style="background: linear-gradient(135deg,#f77f00,#fcbf49)">SI</div>
+                            <div>
+                                <div class="reviewer-name">Sumaiya Islam</div>
+                                <div class="reviewer-location">Khulna, Bangladesh</div>
+                                <div class="verified-badge mt-1"><i class="fas fa-circle-check"></i> Verified Purchase</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 6 -->
+                <div class="col-md-6 col-lg-4 fade-up">
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">
+                            "I was blown away by the quality! Getting something this good at such a low price is truly rare. Thank you BrandShop team!"
+                        </p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar" style="background: linear-gradient(135deg,#1d3557,#457b9d)">MR</div>
+                            <div>
+                                <div class="reviewer-name">Masum Rahman</div>
+                                <div class="reviewer-location">Barishal, Bangladesh</div>
+                                <div class="verified-badge mt-1"><i class="fas fa-circle-check"></i> Verified Purchase</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ORDER FORM ===== -->
+    <section class="order-section" id="order">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="text-center mb-4 fade-up">
+                        <div class="section-label">Order Form</div>
+                        <h2 class="section-title">Place Your Order</h2>
+                        <div class="divider mx-auto"></div>
+                    </div>
+ 
+                    <div class="order-card fade-up">
+                        <div class="order-card-header">
+                            <h3>🛒 Order Form</h3>
+                            <p>Fill in the details below correctly — we will contact you shortly.</p>
+                        </div>
+                        <div class="order-card-body">
+                            <!-- Success Message -->
+                            <div class="success-box" id="successBox">
+                                <div class="success-icon"><i class="fas fa-check"></i></div>
+                                <h4 style="font-family:var(--font-display);color:var(--text)">Order Placed Successfully! 🎉</h4>
+                                <p style="color:var(--text-muted);margin-top:8px">We have received your order. Our team will contact you very soon.</p>
+                            </div>
+ 
+                            <!-- Form -->
+                            <form id="orderForm" novalidate>
+                                <!-- Name -->
+                                <div class="form-group">
+                                    <label class="form-label">Your Name <span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your full name"/>
+                                    <div class="error-msg" id="nameErr">Name is required.</div>
+                                </div>
+ 
+                                <!-- Phone -->
+                                <div class="form-group">
+                                    <label class="form-label">Mobile Number <span class="required">*</span></label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="01XXXXXXXXX"/>
+                                    <div class="error-msg" id="phoneErr">Please enter a valid mobile number.</div>
+                                </div>
+ 
+                                <!-- Address -->
+                                <div class="form-group">
+                                    <label class="form-label">Full Address <span class="required">*</span></label>
+                                    <textarea class="form-control" id="address" rows="3" placeholder="House no., road, area, district..."></textarea>
+                                    <div class="error-msg" id="addressErr">Delivery address is required.</div>
+                                </div>
+ 
+                                <!-- Quantity -->
+                                <div class="form-group">
+                                    <label class="form-label">Quantity <span class="required">*</span></label>
+                                    <div class="qty-wrapper">
+                                        <button type="button" class="qty-btn" onclick="changeQty(-1)">−</button>
+                                        <input type="number" class="qty-input" id="qty" value="1" min="1" max="10" readonly/>
+                                        <button type="button" class="qty-btn" onclick="changeQty(1)">+</button>
+                                    </div>
+                                </div>
+ 
+                                <!-- Order Summary -->
+                                <div class="order-summary" id="orderSummary">
+                                    <div class="summary-row"><span>Product Price</span><span>৳ 999</span></div>
+                                    <div class="summary-row"><span>Quantity</span><span id="summaryQty">× 1</span></div>
+                                    <div class="summary-row"><span>Delivery Charge</span><span style="color:#28a745">Free 🎁</span></div>
+                                    <div class="summary-row total"><span>Total Payment</span><span class="price" id="summaryTotal">৳ 999</span></div>
+                                </div>
+ 
+                                <!-- Payment -->
+                                <div class="form-group">
+                                    <label class="form-label">Payment Method <span class="required">*</span></label>
+                                    <div class="payment-options">
+                                        <div class="payment-option">
+                                            <input type="radio" name="payment" id="payBkash" value="bkash" onchange="handlePayment()"/>
+                                            <label class="payment-label" for="payBkash">
+                                                <img src="https://placehold.co/28x28/e91f7a/fff?text=b" style="width: 20px;" style="border-radius:6px" alt="bKash"/>
+                                                bKash
+                                            </label>
+                                        </div>
+                                        <div class="payment-option">
+                                            <input type="radio" name="payment" id="payCod" value="cod" onchange="handlePayment()" checked/>
+                                            <label class="payment-label" for="payCod">
+                                                <i class="fas fa-money-bill-wave" style="color:#28a745;font-size:15px"></i>
+                                                Cash on Delivery
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="error-msg" id="paymentErr">Please select a payment method.</div>
+                                </div>
+ 
+                                <!-- bKash box -->
+                                <div class="bkash-box" id="bkashBox">
+                                    <div class="bkash-info">
+                                        <span class="bkash-logo">💳</span>
+                                        <div>
+                                            <div style="font-size:0.78rem;opacity:0.9">Send payment to our bKash number</div>
+                                            <div class="number">01XXXXXXXXX</div>
+                                            <small>After payment, enter the Transaction ID below</small>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-0">
+                                        <label class="form-label">bKash Transaction ID <span class="required">*</span></label>
+                                        <input type="text" class="form-control" id="trxId" placeholder="e.g. 8N7A3B2X9C"/>
+                                        <div class="error-msg" id="trxErr">Transaction ID is required.</div>
+                                    </div>
+                                </div>
+ 
+                                <!-- Submit -->
+                                <div class="mt-4">
+                                    <button type="submit" class="btn-confirm">
+                                        <i class="fas fa-check-circle"></i>
+                                        Confirm Order
+                                    </button>
+                                    <p style="text-align:center;font-size:0.78rem;color:var(--text-muted);margin-top:12px">
+                                        <i class="fas fa-lock" style="color:var(--primary)"></i>
+                                        Your information is completely safe and confidential
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-center mb-3">
+                <div class="col-md-4 mb-3 mb-md-">
+                   <img src="./assets/images/logo.png" alt="logo"><br>
+                    
+                </div>
+                <div class="col-md-4 text-md-center mb-3 mb-md-0">
+                    <small>
+                        <i class="fas fa-phone" style="color:var(--primary)"></i>&nbsp;
+                        01XXXXXXXXX &nbsp;|&nbsp;
+                        <i class="fas fa-envelope" style="color:var(--primary)"></i>&nbsp;
+                        banglabazar247bd@gmail.com
+                    </small>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <small>
+                        <a href="#" style="color:var(--text-muted);margin-right:12px">Privacy Policy</a>
+                        <a href="#" style="color:var(--text-muted)">Terms & Conditions</a>
+                    </small>
+                </div>
+            </div>
+            <hr style="border-color:var(--border)"/>
+            <div class="text-center" style="font-size:0.78rem">
+                © 2025 BrandShop. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+ 
+    <!-- ===== STICKY CTA ===== -->
+    <div class="sticky-cta">
+        <a href="#order" class="btn-cta" style="padding:14px 24px;font-size:0.98rem">
+            <i class="fas fa-shopping-cart"></i>
+            Order Now — Only ৳ 999
+        </a>
+    </div>
+ 
+    <!-- ===== WHATSAPP FAB ===== -->
+    <a href="https://wa.me/8801XXXXXXXXX" target="_blank" class="whatsapp-fab" title="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+ 
+    <!-- js link part -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/app.js"></script>
+    <!-- js link part ends -->
+
+    <!-- js link part ends -->
+</body>
+</html>
