@@ -699,6 +699,17 @@
 [data-theme="dark"] .cta-btn-outline:hover {
   background: rgba(255, 255, 255, 0.12);
 }
+
+.card-box h6 {
+  color: var(--text);
+  margin: 8px 0 6px;
+}
+
+.card-box small {
+  color: var(--text-muted);
+  line-height: 1.5;
+  display: block;
+}
     /* ========== REVIEWS ========== */
     .reviews-section { background: var(--surface); }
     .review-card {
