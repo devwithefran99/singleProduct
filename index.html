@@ -42,7 +42,7 @@
                 <div class="col-lg-6 order-lg-2">
                     <div class="product-image-wrap fade-up">
                         <span class="image-badge">🔥Best Sales</span>
-                        <img src="./assets/images/sukti.jpg" alt="sutki" id="hero-img"/>
+                        <img src="./assets/images/singleProductBanner.png"  alt="sutki" id="hero-img"/>
                     </div>
                 </div>
                 <!-- Info -->
@@ -91,7 +91,7 @@
       <div class="col">
         <div class="hutki-card">
           <div class="img-wrap">
-            <img src="./assets/images/suktimach.jpg" alt="ছুড়ি শুটকি">
+            <img src="./assets/images/churi_sutki.png" alt="ছুড়ি শুটকি">
           </div>
           <div class="card-body">
             <div class="card-name">জাতি ছুড়ি শুটকি</div>
@@ -104,7 +104,7 @@
       <div class="col">
         <div class="hutki-card">
           <div class="img-wrap">
-              <img src="./assets/images/suktimach.jpg" alt="ছুড়ি শুটকি">
+              <img src="./assets/images/loitta_sutki.png" alt="লইট্টা শুটকি">
           </div>
           <div class="card-body">
             <div class="card-name">লইট্টা শুটকি</div>
@@ -117,7 +117,7 @@
       <div class="col">
         <div class="hutki-card">
           <div class="img-wrap">
-              <img src="./assets/images/suktimach.jpg" alt="ছুড়ি শুটকি">
+              <img src="./assets/images/chigri_sutki.png" alt="চিংড়ি শুটকি">
           </div>
           <div class="card-body">
             <div class="card-name">লাল চিংড়ি শুটকি</div>
@@ -130,7 +130,7 @@
       <div class="col">
         <div class="hutki-card">
           <div class="img-wrap">
-               <img src="./assets/images/suktimach.jpg" alt="ছুড়ি শুটকি">
+               <img src="./assets/images/moilla_sutki.png" alt="মইল্লা শুটকি">
           </div>
           <div class="card-body">
             <div class="card-name">মইল্লা শুটকি</div>
@@ -143,7 +143,7 @@
       <div class="col">
         <div class="hutki-card">
           <div class="img-wrap">
-             <img src="./assets/images/suktimach.jpg" alt="ছুড়ি শুটকি">
+             <img src="./assets/images/faissha_sutki.png" alt="ফাইস্যা শুটকি">
           </div>
           <div class="card-body">
             <div class="card-name">ফাইস্যা শুটকি</div>
@@ -449,127 +449,168 @@
     </section>
 
     <!-- ===== ORDER FORM ===== -->
-    <section class="order-section" id="order">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="text-center mb-4 fade-up">
-                        <div class="section-label">Order Form</div>
-                        <h2 class="section-title">Place Your Order</h2>
-                        <div class="divider mx-auto"></div>
-                    </div>
+   <section class="order-section" id="order">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="text-center mb-4 fade-up">
+                    <div class="section-label">Order Form</div>
+                    <h2 class="section-title">Place Your Order</h2>
+                    <div class="divider mx-auto"></div>
+                </div>
  
-                    <div class="order-card fade-up">
-                        <div class="order-card-header">
-                            <h3>🛒 Order Form</h3>
-                            <p>Fill in the details below correctly — we will contact you shortly.</p>
+                <div class="order-card fade-up">
+                    <div class="order-card-header">
+                        <h3>🛒 Order Form</h3>
+                        <p>Fill in the details below correctly — we will contact you shortly.</p>
+                    </div>
+                    <div class="order-card-body">
+ 
+                        <!-- Success Message -->
+                        <div class="success-box" id="successBox">
+                            <div class="success-icon"><i class="fas fa-check"></i></div>
+                            <h4 style="font-family:var(--font-display);color:var(--text)">Order Placed Successfully! 🎉</h4>
+                            <p style="color:var(--text-muted);margin-top:8px">We have received your order. Our team will contact you very soon.</p>
                         </div>
-                        <div class="order-card-body">
-                            <!-- Success Message -->
-                            <div class="success-box" id="successBox">
-                                <div class="success-icon"><i class="fas fa-check"></i></div>
-                                <h4 style="font-family:var(--font-display);color:var(--text)">Order Placed Successfully! 🎉</h4>
-                                <p style="color:var(--text-muted);margin-top:8px">We have received your order. Our team will contact you very soon.</p>
+ 
+                        <!-- Form -->
+                        <form id="orderForm" novalidate>
+ 
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label class="form-label">Your Name <span class="required">*</span></label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your full name"/>
+                                <div class="error-msg" id="nameErr">Name is required.</div>
                             </div>
  
-                            <!-- Form -->
-                            <form id="orderForm" novalidate>
-                                <!-- Name -->
-                                <div class="form-group">
-                                    <label class="form-label">Your Name <span class="required">*</span></label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter your full name"/>
-                                    <div class="error-msg" id="nameErr">Name is required.</div>
-                                </div>
+                            <!-- Phone -->
+                            <div class="form-group">
+                                <label class="form-label">Mobile Number <span class="required">*</span></label>
+                                <input type="tel" class="form-control" id="phone" placeholder="01XXXXXXXXX"/>
+                                <div class="error-msg" id="phoneErr">Please enter a valid mobile number.</div>
+                            </div>
  
-                                <!-- Phone -->
-                                <div class="form-group">
-                                    <label class="form-label">Mobile Number <span class="required">*</span></label>
-                                    <input type="tel" class="form-control" id="phone" placeholder="01XXXXXXXXX"/>
-                                    <div class="error-msg" id="phoneErr">Please enter a valid mobile number.</div>
-                                </div>
+                            <!-- Address -->
+                            <div class="form-group">
+                                <label class="form-label">Full Address <span class="required">*</span></label>
+                                <textarea class="form-control" id="address" rows="3" placeholder="House no., road, area, district..."></textarea>
+                                <div class="error-msg" id="addressErr">Delivery address is required.</div>
+                            </div>
  
-                                <!-- Address -->
-                                <div class="form-group">
-                                    <label class="form-label">Full Address <span class="required">*</span></label>
-                                    <textarea class="form-control" id="address" rows="3" placeholder="House no., road, area, district..."></textarea>
-                                    <div class="error-msg" id="addressErr">Delivery address is required.</div>
+                            <!-- Quantity -->
+                            <div class="form-group">
+                                <label class="form-label">Quantity <span class="required">*</span></label>
+                                <div class="qty-wrapper">
+                                    <button type="button" class="qty-btn" onclick="changeQty(-1)">−</button>
+                                    <input type="number" class="qty-input" id="qty" value="1" min="1" max="10" readonly/>
+                                    <button type="button" class="qty-btn" onclick="changeQty(1)">+</button>
                                 </div>
+                            </div>
  
-                                <!-- Quantity -->
-                                <div class="form-group">
-                                    <label class="form-label">Quantity <span class="required">*</span></label>
-                                    <div class="qty-wrapper">
-                                        <button type="button" class="qty-btn" onclick="changeQty(-1)">−</button>
-                                        <input type="number" class="qty-input" id="qty" value="1" min="1" max="10" readonly/>
-                                        <button type="button" class="qty-btn" onclick="changeQty(1)">+</button>
+                            <!-- Order Summary -->
+                            <div class="order-summary" id="orderSummary">
+                                <div class="summary-row"><span>Product Price</span><span>৳ 999</span></div>
+                                <div class="summary-row"><span>Quantity</span><span id="summaryQty">× 1 Pack (330 gm)</span></div>
+                                <!-- Discount row — hidden by default, shown when coupon applied -->
+                                <div class="summary-row" id="discountRow" style="display:none;">
+                                    <span style="color:#28a745">Discount <span id="discountLabel"></span></span>
+                                    <span style="color:#28a745" id="discountAmt"></span>
+                                </div>
+                                <div class="summary-row"><span>Delivery Charge</span><span style="color:#28a745">Free 🎁</span></div>
+                                <div class="summary-row total"><span>Total Payment</span><span class="price" id="summaryTotal">৳ 999</span></div>
+                            </div>
+ 
+                            <!-- ============================================
+                                 COUPON SECTION
+                                 Secret: not prominently shown — only visible
+                                 after clicking the small trigger link below
+                            ============================================= -->
+                            <div class="coupon-trigger-wrap">
+                                <span class="coupon-trigger-link" id="couponTriggerText" onclick="toggleCouponBox()">
+                                    আপনার কাছে কি কোনো Coupon Code আছে?
+                                </span>
+                            </div>
+ 
+                            <div id="couponSection" style="display:none;">
+                                <div class="form-group mb-0">
+                                    <label class="form-label">Coupon Code</label>
+                                    <div class="coupon-input-wrap">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="couponInput"
+                                            placeholder="Coupon code লিখুন"
+                                            autocomplete="off"
+                                            oninput="this.value=this.value.toUpperCase()"
+                                        />
+                                        <button type="button" class="coupon-apply-btn" id="couponApplyBtn" onclick="applyCoupon()">
+                                            Apply
+                                        </button>
+                                    </div>
+                                    <div id="couponMsg" class="coupon-msg" style="display:none;"></div>
+                                </div>
+                            </div>
+                            <!-- END COUPON SECTION -->
+ 
+                            <!-- Payment -->
+                            <div class="form-group">
+                                <label class="form-label">Payment Method <span class="required">*</span></label>
+                                <div class="payment-options">
+                                    <div class="payment-option">
+                                        <input type="radio" name="payment" id="payBkash" value="bkash" onchange="handlePayment()"/>
+                                        <label class="payment-label" for="payBkash">
+                                            <img src="https://placehold.co/28x28/e91f7a/fff?text=b" style="width:20px;border-radius:6px" alt="bKash"/>
+                                            bKash Payment
+                                        </label>
+                                    </div>
+                                    <div class="payment-option">
+                                        <input type="radio" name="payment" id="payCod" value="cod" onchange="handlePayment()" checked/>
+                                        <label class="payment-label" for="payCod">
+                                            <i class="fas fa-money-bill-wave" style="color:#28a745;font-size:15px"></i>
+                                            Cash on Delivery
+                                        </label>
                                     </div>
                                 </div>
+                                <div class="error-msg" id="paymentErr">Please select a payment method.</div>
+                            </div>
  
-                                <!-- Order Summary -->
-                                <div class="order-summary" id="orderSummary">
-                                    <div class="summary-row"><span>Product Price</span><span>৳ 999</span></div>
-                                    <div class="summary-row"><span>Quantity</span><span id="summaryQty">× 1 Pack (330 gm)</span></div>
-                                    <div class="summary-row"><span>Delivery Charge</span><span style="color:#28a745">Free 🎁</span></div>
-                                    <div class="summary-row total"><span>Total Payment</span><span class="price" id="summaryTotal">৳ 999</span></div>
-                                </div>
- 
-                                <!-- Payment -->
-                                <div class="form-group">
-                                    <label class="form-label">Payment Method <span class="required">*</span></label>
-                                    <div class="payment-options">
-                                        <div class="payment-option">
-                                            <input type="radio" name="payment" id="payBkash" value="bkash" onchange="handlePayment()"/>
-                                            <label class="payment-label" for="payBkash">
-                                                <img src="https://placehold.co/28x28/e91f7a/fff?text=b" style="width: 20px;" style="border-radius:6px" alt="bKash"/>
-                                                bKash
-                                            </label>
-                                        </div>
-                                        <div class="payment-option">
-                                            <input type="radio" name="payment" id="payCod" value="cod" onchange="handlePayment()" checked/>
-                                            <label class="payment-label" for="payCod">
-                                                <i class="fas fa-money-bill-wave" style="color:#28a745;font-size:15px"></i>
-                                                Cash on Delivery
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="error-msg" id="paymentErr">Please select a payment method.</div>
-                                </div>
- 
-                                <!-- bKash box -->
-                                <div class="bkash-box" id="bkashBox">
-                                    <div class="bkash-info">
-                                        <span class="bkash-logo">💳</span>
-                                        <div>
-                                            <div style="font-size:0.78rem;opacity:0.9">Send payment to our bKash number</div>
-                                            <div class="number">01740604565</div>
-                                            <small>After payment, enter the Transaction ID below</small>
-                                        </div>
-                                    </div>
-                                    <div class="form-group mb-0">
-                                        <label class="form-label">bKash Transaction ID <span class="required">*</span></label>
-                                        <input type="text" class="form-control" id="trxId" placeholder="e.g. 8N7A3B2X9C"/>
-                                      <div class="error-msg" id="trxErr">Please enter a valid bKash TrxID (10 characters, e.g. 8N7A3B2X9C)</div>
+                            <!-- bKash box -->
+                            <div class="bkash-box" id="bkashBox">
+                                <div class="bkash-info">
+                                    <span class="bkash-logo">💳</span>
+                                    <div>
+                                        <div style="font-size:0.78rem;opacity:0.9">Send payment to our bKash number</div>
+                                        <div class="number">01740604565</div>
+                                        <small>After payment, enter the Transaction ID below</small>
                                     </div>
                                 </div>
- 
-                                <!-- Submit -->
-                                <div class="mt-4">
-                                    <button type="submit" class="btn-confirm">
-                                        <i class="fas fa-check-circle"></i>
-                                        Confirm Order
-                                    </button>
-                                    <p style="text-align:center;font-size:0.78rem;color:var(--text-muted);margin-top:12px">
-                                        <i class="fas fa-lock" style="color:var(--primary)"></i>
-                                        Your information is completely safe and confidential
-                                    </p>
+                                <div class="form-group mb-0">
+                                    <label class="form-label">bKash Transaction ID <span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="trxId" placeholder="e.g. 8N7A3B2X9C"/>
+                                    <div class="error-msg" id="trxErr">Please enter a valid bKash TrxID (10 characters, e.g. 8N7A3B2X9C)</div>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+ 
+                            <!-- Submit -->
+                            <div class="mt-4">
+                                <button type="submit" class="btn-confirm">
+                                    <i class="fas fa-check-circle"></i>
+                                    Confirm Order
+                                </button>
+                                <p style="text-align:center;font-size:0.78rem;color:var(--text-muted);margin-top:12px">
+                                    <i class="fas fa-lock" style="color:var(--primary)"></i>
+                                    Your information is completely safe and confidential
+                                </p>
+                            </div>
+ 
+                        </form>
                     </div>
                 </div>
+ 
             </div>
         </div>
-    </section>
+    </div>
+</section>
  
     <!-- ===== FOOTER ===== -->
     <footer>

@@ -116,7 +116,7 @@
     }
     .product-title {
       font-family: var(--font-display);
-      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-size: 36px;
       font-weight: 700;
       line-height: 1.5;
       color: var(--text);
@@ -138,13 +138,13 @@
       overflow: hidden;
       box-shadow: var(--shadow-lg);
     }
-    .product-image-wrap img {
-      width: 100%;
-      height: 420px;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.5s ease;
-    }
+ .product-image-wrap img {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.5s ease;
+
+}
     .product-image-wrap:hover img { transform: scale(1.04); }
     .image-badge {
       position: absolute;
@@ -834,6 +834,100 @@
       font-size: 2rem;
       margin: 0 auto 16px;
     }
+/* coupon css starts */
+ 
+.coupon-trigger-wrap {
+    text-align: center;
+    margin: 0 0 1rem;
+}
+ 
+.coupon-trigger-link {
+    font-size: 1rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    text-decoration: underline dotted;
+    transition: color 0.2s;
+    user-select: none;
+}
+ 
+.coupon-trigger-link:hover {
+    color: var(--primary);
+}
+ 
+#couponSection {
+    background: var(--card-bg, #f9f9f9);
+    border: 1px dashed var(--border, #ddd);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 1.2rem;
+}
+ 
+.coupon-input-wrap {
+    display: flex;
+    gap: 8px;
+}
+ 
+.coupon-input-wrap .form-control {
+    flex: 1;
+}
+ 
+.coupon-apply-btn {
+    padding: 10px 18px;
+    background: var(--primary, #533ab7);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    white-space: nowrap;
+}
+ 
+.coupon-apply-btn:hover {
+    background: var(--primary-dark, #3c3489);
+}
+ 
+.coupon-apply-btn:active {
+    transform: scale(0.97);
+}
+ 
+.coupon-apply-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+ 
+.coupon-msg {
+    font-size: 12px;
+    margin-top: 8px;
+    padding: 7px 12px;
+    border-radius: 7px;
+}
+ 
+.coupon-success {
+    background: #eaf3de;
+    color: #3b6d11;
+    border: 1px solid #97c459;
+}
+ 
+.coupon-error {
+    background: #fcebeb;
+    color: #a32d2d;
+    border: 1px solid #f09595;
+}
+ 
+.coupon-remove {
+    font-size: 11px;
+    color: #a32d2d;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 8px;
+    font-weight: 600;
+}
+ 
+.coupon-remove:hover {
+    color: #791f1f;
+}
  
     /* ========== FOOTER ========== */
     footer {
